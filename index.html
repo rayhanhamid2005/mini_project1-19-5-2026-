@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio Rayhan Hamid</title>
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body{
+            background:#f4f6f9;
+            color:#333;
+        }
+
+        header{
+            background:#0d1b2a;
+            color:white;
+            padding:40px 20px;
+        }
+
+        /* HEADER */
+        .header-container{
+            display:flex;
+            align-items:center;
+            gap:20px;
+        }
+
+        /* FOTO PROFIL */
+        .profile-img{
+            width:180px;
+            height:180px;
+            border-radius:50%;
+            object-fit:cover;
+            border:5px solid white;
+        }
+
+        .header-text h1{
+            font-size:35px;
+            margin-bottom:10px;
+        }
+
+        .header-text p{
+            font-size:18px;
+            opacity:0.9;
+        }
+
+        main{
+            width:90%;
+            max-width:1100px;
+            margin:40px auto;
+        }
+
+        section{
+            margin-bottom:40px;
+        }
+
+        h2{
+            color:#0d1b2a;
+            margin-bottom:20px;
+            border-left:5px solid #0077b6;
+            padding-left:10px;
+        }
+
+        .about{
+            background:white;
+            padding:25px;
+            border-radius:12px;
+            box-shadow:0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        .projects{
+            display:grid;
+            grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+            gap:20px;
+        }
+
+        .project-card{
+            background:white;
+            padding:20px;
+            border-radius:12px;
+            box-shadow:0 4px 10px rgba(0,0,0,0.1);
+            transition:0.3s;
+        }
+
+        .project-card:hover{
+            transform:translateY(-5px);
+        }
+
+        .project-card h3{
+            color:#0077b6;
+            margin-bottom:10px;
+        }
+
+        footer{
+            background:#0d1b2a;
+            color:white;
+            text-align:center;
+            padding:20px;
+            margin-top:40px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+
+        <div class="header-container">
+
+            <!-- FOTO -->
+            <img src="hamidfoto.jpeg" alt="Foto Rayhan" class="profile-img">
+
+            <!-- TEXT -->
+            <div class="header-text">
+                <h1>Rayhan Hamid</h1>
+                <p>Mahasiswa Teknik Elektro - Politeknik Negeri Padang</p>
+            </div>
+
+        </div>
+
+    </header>
+
+    <main>
+
+        <section class="about">
+            <h2>Tentang Saya</h2>
+            <p>
+                Saya adalah Mahasiswa Aktif Tingkat 3 Jurusan Teknik Elektro 
+                Program Studi DIV Elektronika Industri kelas 3A.
+                Saya memiliki minat di bidang otomasi industri, sistem kontrol,
+                jaringan komputer, serta pemrograman mikrokontroler.yang Sebentar lagi Bakalan Menjalani Program magang Industrial.
+            </p>
+        </section>
+
+        <section>
+            <h2>Project Teknik Elektro</h2>
+
+            <div class="projects">
+
+                <div class="project-card">
+                    <h3>Project PLC</h3>
+                    <p>
+                        Membuat sistem kontrol otomatis berbasis PLC 
+                        untuk simulasi industri.
+                    </p>
+                </div>
+
+                <div class="project-card">
+                    <h3>Project SCADA</h3>
+                    <p>
+                        Sistem monitoring dan kontrol industri berbasis SCADA.
+                    </p>
+                </div>
+
+                <div class="project-card">
+                    <h3>Project Mikrokontroler</h3>
+                    <p>
+                        Sistem berbasis Arduino dan ESP32 untuk IoT dan sensor otomatis.
+                    </p>
+                </div>
+
+                <div class="project-card">
+                    <h3>Project Digital</h3>
+                    <p>
+                        Implementasi gerbang logika dan rangkaian digital.
+                    </p>
+                </div>
+
+                <div class="project-card">
+                    <h3>Maintenance And Repair</h3>
+                    <p>
+                        Cara Memperbaiki Dan Menjaga alat elektronic Industrial.
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Portofolio Teknik Elektro | Rayhan Hamid</p>
+    </footer>
+
+</body>
+</html>
